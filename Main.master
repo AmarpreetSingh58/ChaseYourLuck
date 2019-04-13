@@ -1,0 +1,197 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+<!DOCTYPE html>
+<!--
+Template Name: Illusion
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<title>NexTech</title>
+<meta charset="utf-8"/>
+    <style>
+        .center {
+            text-align:center;padding-top:5px;padding-bottom:5px;padding-left:10px;padding-right:10px;
+        }
+        </style>
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="top" class="bgded fixed" style="background-image:url('images/demo/backgrounds/1.jpg');">
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+    <form id="form1" runat="server">
+<div class="wrapper row0">
+  <header id="header" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo">
+      <h1><u><a href="home.aspx">NexTech</a></u></h1></div>
+      <p>We are here to Introduce the finest class of Electronics - NexTech </p>
+	<p>"<u>GO GREEN WITH US</u>"</p>
+    <!-- ################################################################################################ --> 
+	</header>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <nav id="mainav" class="clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li class="active"><a href="home.aspx">Home</a></li>
+      <li><a class="drop" href="#">Our Products</a>
+        <ul>
+          <li><a href="#contact">Mobile Phones</a></li>
+          <li><a href="#contact">Laptops</a></li>
+          <li><a href="#contact">SmartWears</a></li>
+        </ul>
+      </li>
+      <li><a class="drop" href="login.aspx">Login</a>
+            <ul>
+                <li><a href="ulogin.aspx">User Login</a></li>
+                <li><a href="alogin.aspx">Admin Login</a></li>
+                <li><a href="thlogin.aspx">TH Login</a></li>
+                <li><a href="tplogin.aspx">TP Login</a></li>
+            </ul>
+      </li>
+      <li><a href="register.aspx">Register</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#about">About Us</a></li>
+    </ul>
+    <!-- ################################################################################################ --> 
+  </nav>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div id="slideshow" class="wrapper">
+      <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div id="about" class="wrapper row3">
+  <main id="container" class="clear"> 
+    <!-- container body --> 
+    <!-- ########################################################################################## -->
+      <h3 style="text-align:center; text-decoration-line:underline;text-decoration-style:wavy; font-style: italic; text-decoration: underline;">We Create Ideas !</h3>
+      <h3 style="text-align:center">Meet Our Team</h3>
+    <ul class="nospace center clear">
+      <li class="one_third first"><a href="#"><img class="circle pad5 borderedbox push30" src="images/demo/gallery/gallery1.jpg" alt=""></a>
+        <h6 class="push10">Steve Jobs</h6>
+        <p class="nospace push10">Senior Partner @ NexTech</p>
+        <p class="nospace"><a href="#slideshow">Read more &raquo;</a></p>
+      </li>
+      <li class="one_third"><a href="#"><img class="circle pad5 borderedbox push30" src="images/demo/gallery/gallery2.jpg" alt=""></a>
+        <h6 class="push10">Diipak Bisht</h6>
+        <p class="nospace push10">CEO @ NexTech</p>
+        <p class="nospace"><a href="#slideshow">Read more &raquo;</a></p>
+      </li>
+      <li class="one_third"><a href="#"><img class="circle pad5 borderedbox push30" src="images/demo/gallery/gallery3.jpg" alt=""></a>
+        <h6 class="push10">Albert Einstien</h6>
+        <p class="nospace push10">Senior Partner @ NexTech</p>
+        <p class="nospace"><a href="#slideshow">Read more &raquo;</a></p>
+      </li>
+    </ul>
+    <!-- ########################################################################################## --> 
+    <!-- / container body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div id="contact" class="one_third first">
+      <h6 class="title">Contact Us</h6>
+      <address class="push30">
+      NexTech<br>
+      Opp of Metro pillar no.100<br>
+      Preet Vihar<br>
+      Postcode/Zip
+      </address>
+      <ul class="nospace">
+        <li class="push10"><span class="icon-time"></span> Mon. - Fri. 9:00am - 7:00pm</li>
+        <li class="push10"><span class="icon-phone"></span> +00 (123) 456 7890</li>
+        <li><span class="icon-envelope-alt"></span> info@domain.com</li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="title">Great Products</h6>
+      <ul class="nospace clear">
+        <li class="clear push30">
+          <div class="imgl"><img src="images/demo/82.jpg" alt=""></div>
+          <p class="nospace push15">Sony Xperia T2 Ultra</p>
+          <p class="nospace"><a href="#">Back To TOP .^. </a></p>
+        </li>
+        <li class="clear">
+          <div class="imgl"><img src="images/demo/81.jpg" alt=""></div>
+          <p class="nospace push15">Sony Vaio</p>
+          <p class="nospace"><a href="#">Back To TOP .^. </a></p>
+        </li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="title">Find Us On</h6>
+      <ul class="nospace clear ftgal">
+        <li class="one_third first"><a href="#"><img src="images/demo/f.jpg" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="images/demo/g.jpg" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="images/demo/t.jpg" alt=""></a></li>
+        <li class="one_third first"><a href="#"><img src="images/demo/l.jpg" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="images/demo/gh.jpg" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="images/demo/i.jpg" alt=""></a></li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ --> 
+  </footer>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved </p>
+   
+    <!-- ################################################################################################ --> 
+  </div>
+</div>
+<!-- JAVASCRIPTS --> 
+<script src="layout/scripts/jquery.min.js"></script> 
+<script src="layout/scripts/supersized/supersized.min.js"></script> 
+<script>
+    jQuery(function ($) {
+        $.supersized({
+            slides: [{
+                image: 'images/demo/slider/1.jpg',
+
+            }, {
+                image: 'images/demo/slider/2.jpg',
+
+            }, {
+                image: 'images/demo/slider/3.jpg',
+
+            }, {
+                image: 'images/demo/slider/4.jpg',
+
+            }, {
+                image: 'images/demo/slider/5.jpg',
+
+            }, {
+                image: 'images/demo/slider/6.jpg',
+
+            }]
+        });
+    });
+</script>
+    </form>
+</body>
+</html>

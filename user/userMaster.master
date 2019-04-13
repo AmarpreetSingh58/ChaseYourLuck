@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="userMaster.master.cs" Inherits="user_userMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>User Home</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<meta charset="utf-8"/>
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all"/>
+    <style type="text/css">
+        .auto-style2 {
+            width: 296px;
+        }
+    </style>
+</head>
+<body id="top" class="bgded fixed" style="background-image:url('images/demo/backgrounds/1.jpg');">
+ 
+    <form id="form1" runat="server">
+<div class="wrapper row0">
+  <header id="header" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo">
+      <h1><u><a href="home.aspx">NexTech</a></u></h1></div>
+      <p>We are here to Introduce the finest class of Electronics - NexTech </p>
+	<p>"<u>GO GREEN WITH US</u>"</p>
+    <!-- ################################################################################################ --> 
+	</header>
+</div>
+    <!-- ################################################################################################ --> 
+  </header>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <div id="breadcrumb" style="font-size:20px"> 
+    <!-- ############################################################################################################# -->
+   
+    <!-- ############################################################################################################# --> 
+     <center> Welcome <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></center>
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div style="">
+<center><table style="width:77%; height:400px;">
+	<tr>
+		<td class="auto-style2">
+            <asp:TreeView ID="TreeView1" runat="server" ExpandDepth="0" ImageSet="Simple" OnSelectedNodeChanged="TreeView1_SelectedNodeChanged">
+                <HoverNodeStyle BackColor="#B5DF6B" ForeColor="White" />
+                <LeafNodeStyle ForeColor="Black" />
+                <Nodes>
+                    <asp:TreeNode Text="User Home Page" Value="Admin Home Page" NavigateUrl="~/user/userHome.aspx"></asp:TreeNode>
+                    <asp:TreeNode NavigateUrl="~/user/solution.aspx" Text="Display Solution" Value="Display Solution"></asp:TreeNode>
+                    <asp:TreeNode Text="Account" Value="Account" SelectAction="Expand">
+                        <asp:TreeNode Text="Change Password" Value="Change Password" NavigateUrl="~/user/chpass.aspx"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Query" Value="Report" NavigateUrl="~/user/query.aspx">
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Logout" Value="Logout"></asp:TreeNode>
+                </Nodes>
+                <NodeStyle ForeColor="Black" />
+                <SelectedNodeStyle ForeColor="Red" />
+            </asp:TreeView>
+        </td>
+		<td><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder></td>
+	</tr>
+</table></center></div>
+<div class="wrapper row4">
+  <footer id="footer" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div id="contact" class="one_third first">
+      <h6 class="title">Contact Us</h6>
+      <address class="push30">
+      NexTech<br/>
+      Opp of Metro pillar no.100<br/>
+      Preet Vihar<br/>
+      Postcode/Zip
+      </address>
+      <ul class="nospace">
+        <li class="push10"><span class="icon-time"></span> Mon. - Fri. 9:00am - 7:00pm</li>
+        <li class="push10"><span class="icon-phone"></span> +00 (123) 456 7890</li>
+        <li><span class="icon-envelope-alt"></span> info@domain.com</li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="title">Great Products</h6>
+      <ul class="nospace clear">
+        <li class="clear push30">
+          <div class="imgl"><img src="images/demo/82.jpg" alt=""/></div>
+          <p class="nospace push15">Sony Xperia T2 Ultra</p>
+          <p class="nospace"><a href="#">Back To TOP .^. </a></p>
+        </li>
+        <li class="clear">
+          <div class="imgl"><img src="images/demo/81.jpg" alt=""/></div>
+          <p class="nospace push15">Sony Vaio</p>
+          <p class="nospace"><a href="#">Back To TOP .^. </a></p>
+        </li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="title">Find Us On</h6>
+      <ul class="nospace clear ftgal">
+        <li class="one_third first"><a href="#"><img src="images/demo/f.jpg" alt=""/></a></li>
+        <li class="one_third"><a href="#"><img src="images/demo/g.jpg" alt=""/></a></li>
+        <li class="one_third"><a href="#"><img src="images/demo/t.jpg" alt=""/></a></li>
+        <li class="one_third first"><a href="#"><img src="images/demo/l.jpg" alt=""/></a></li>
+        <li class="one_third"><a href="#"><img src="images/demo/gh.jpg" alt=""/></a></li>
+        <li class="one_third"><a href="#"><img src="images/demo/i.jpg" alt=""/></a></li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ --> 
+  </footer>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved </p>
+   
+    <!-- ################################################################################################ --> 
+  </div>
+</div>
+    </form>
+</body>
+</html>
+
+
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+
